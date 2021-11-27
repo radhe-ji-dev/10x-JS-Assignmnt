@@ -3,9 +3,10 @@
 ## Given set of three inputs, you should determine if you should be allowed to drive or not
 
 Factors to check (inputs provided are in the same order)
-* You have driving liscence
-* You are tired
-* You are sober
+
+- You have driving liscence
+- You are tired
+- You are sober
 
 You should only be allowed to drive when you have diriving liscence, when you are not tired and when you are sober
 
@@ -30,4 +31,4 @@ Input - true, true, false
 Output - "You shouldn't drive"
 ```
 
-Run ```npm run test:file can_drive``` to check if your solution is correct
+Run `npm run test:file can_drive` to check if your solution is correct
