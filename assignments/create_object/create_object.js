@@ -1,5 +1,6 @@
 function CreateObject(arr) {
   const obj = {};
+  //itreating object
   for (let i = 0; i < arr.length - 1; i = i + 2) {
     obj[arr[i]] = arr[i + 1];
   }
