@@ -26,7 +26,8 @@ function removeNthElement(arr, n) {
             Output: [1,3,4,7]
         Write you code below
     */
-  return arr.splice(n, 1);
+  arr.splice(n, 1);
+  return arr;
 }
 //some coment added
 module.exports = {
