@@ -12,7 +12,6 @@ function AddTask() {
   taskp.appendChild(text);
   taskdiv.appendChild(taskp);
   taskp.setAttribute("id", "idname");
-  taskp.setAttribute("onClick", "RemoveTask(this.id)");
 
   //console and count
   console.log(task.value);
@@ -20,6 +19,6 @@ function AddTask() {
 }
 
 function RemoveTask(ele) {
-  var toremove = document.getElementById(ele);
+  var toremove = document.getElementById("idname");
   toremove.remove();
 }
