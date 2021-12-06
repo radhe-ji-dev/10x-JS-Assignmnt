@@ -1,24 +1,19 @@
-var task_count = 1;
+var input1 = document.querySelector("input");
+var press = document.querySelector("button");
+var TODO = document.querySelector("div .todos");
+var key_val = 0;
 
-function AddTask() {
-  var task = document.getElementById("taskin");
-  var taskdiv = document.getElementById("todoDiv");
-  var taskp = document.createElement("p");
-  var text = document.createTextNode(task.value);
-  task_count++;
-
-  //setting up each item
-  var idname = task_count;
-  taskp.appendChild(text);
-  taskdiv.appendChild(taskp);
-  taskp.setAttribute("id", "idname");
-
-  //console and count
-  console.log(task.value);
-  console.log(task_count);
-}
-
-function RemoveTask(ele) {
-  var toremove = document.getElementById("idname");
-  toremove.remove();
-}
+press.addEventListener("click", function () {
+  var item = input1.value;
+  var tag1 = document.createElement("p");
+  var key = document.createAttribute("key");
+  key.value = key_val;
+  tag1.setAttributeNode(key);
+  tag1.innerHTML = item;
+  TODO.appendChild(tag1);
+  key_val += 1;
+  tag1.addEventListener("click", function () {
+    TODO.removeChild(tag1);
+  });
+  input1.value = "";
+});
