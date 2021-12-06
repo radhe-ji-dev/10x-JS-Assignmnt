@@ -10,9 +10,10 @@ BMI = mass / (height * height)
 ```
 
 Instructions
-* You should return the BMI for the person
-* first argument is mass and the next one is height
-* if the inputs are not valid, then return "INVALID INPUT"
+
+- You should return the BMI for the person
+- first argument is mass and the next one is height
+- if the inputs are not valid, then return "INVALID INPUT"
 
 <br/>
 
@@ -28,4 +29,4 @@ Input - 67, 0
 Output - INVALID INPUT
 ```
 
-Run the test cases using ```npm run test:file bmi_calculator``` to see if you code is fine
+Run the test cases using `npm run test:file bmi_calculator` to see if you code is fine
